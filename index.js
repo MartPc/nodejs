@@ -19,21 +19,22 @@ hbs.registerPartials(__dirname + '/public/views/partials');
 app.get('/',(req, res) => {
     res.render('home',
     {
-        titulo: 'Home',
-        nombre: 'Mattin'
+        titulo: 'OurPage',
+        nombre: 'María Jóse',
+        mensaje: '¡Te amo mucho!'
         
     })
 })
 
-app.get('/productos',(req, res) => {
-        res.render('productos',
-        {
-            titulo: 'Listado productos',
-            nombre: 'Mattin',
-            rol: 'usuario'
-        })
-    }
-)
+//app.get('/productos',(req, res) => {
+//        res.render('productos',
+//        {
+//            titulo: 'Listado productos',
+//            nombre: 'Mattin',
+//            rol: 'usuario'
+//        })
+//    }
+//)
 
 
 
